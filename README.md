@@ -9,7 +9,7 @@ For this install you will need git and your editor of choice since for full expe
 ```bash
 sudo $EDITOR /etc/pacman.conf
 ```
-![alt text](image.png)
+![alt text](screenshots/image.png)
 
 Uncomment (remove #) from lines: color, VerbosePkgLists, ParalelDownloads
 
@@ -31,14 +31,14 @@ sudo $EDITOR /etc/mkinitcpio.conf
 
 append plymouth at the end of the HOOKS parameter
 
-![alt text](image-1.png)
+![alt text](screenshots/image-1.png)
 
 ```bash
 sudo $EDITOR /etc/default/grub
 ```
 append the quiet splash under parameter GRUB_CMDLINE_LINUX_DEFAULT
 
-![alt text](image-2.png)
+![alt text](screenshots/image-2.png)
 
 then run the script
 
