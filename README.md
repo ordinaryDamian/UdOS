@@ -2,6 +2,11 @@
 UdOS semestral work
 
 The goal of this project is to create a easy instalation and distribution of the scripts
+
+Packages needed for this install are: git $EDITOR
+
+$EDITOR = any console based editor like: nano, vim, neovim, micro, ...
+
 ## Pre-Instalation
 For this install you will need git and your editor of choice since for full experience you will need to change couple of configuration files, everything will be detailed bellow.
 ### pacman.sh
