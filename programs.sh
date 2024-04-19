@@ -28,7 +28,7 @@ echo "Installing networking tools"
 sudo pacman -S avahi networkmanager network-manager-applet --noconfirm
 
 echo "Installing applications"  
-sudo pacman -S thunderbird mpv obs-studio tilix arandr ark ntfs-3g obsidian pulseaudio pulseaudio-alsa pulseaudio-bluetooth yt-dlp noto-fonts-emoji pcmanfm firefox  --noconfirm
+sudo pacman -S thunderbird mpv notepadqq obs-studio tilix arandr ark ntfs-3g obsidian pulseaudio pulseaudio-alsa pulseaudio-bluetooth yt-dlp noto-fonts-emoji pcmanfm firefox  --noconfirm
 
 echo "Installing office package"
 sudo pacman -S libreoffice-fresh-en-gb libreoffice-extension-texmaths libreoffice-extension-writer2latex --noconfirm
