@@ -34,8 +34,8 @@ echo "Installing office package"
 sudo pacman -S libreoffice-fresh-en-gb libreoffice-extension-texmaths libreoffice-extension-writer2latex --noconfirm
 sudo pacman -S fastfetch --noconfirm
 sudo pacman -S starship --noconfirm
-sudo pacman -S dunst picom lxappearance --noconfirm
-sudo pacman -S ttf-roboto ttf-firacode-nerd cantarell-fonts --noconfirm
+sudo pacman -S dunst picom --noconfirm
+sudo pacman -S ttf-roboto ttf-firacode-nerd cantarell-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm
 yay -S nerd-fonts-jetbrains-mono --noconfirm
 yay -S themechanger-git --noconfirm
 yay -S brave-bin --noconfirm

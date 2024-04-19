@@ -7,25 +7,9 @@ Packages needed for this install are: git $EDITOR
 
 $EDITOR = any console based editor like: nano, vim, neovim, micro, ...
 
+
 ## Pre-Instalation
 For this install you will need git and your editor of choice since for full experience you will need to change couple of configuration files, everything will be detailed bellow.
-### pacman.sh
-
-```bash
-sudo $EDITOR /etc/pacman.conf
-```
-![alt text](screenshots/image.png)
-
-Uncomment (remove #) from lines: color, VerbosePkgLists, ParalelDownloads
-
-Alternatively you can add line ILoveCandy to make pacman pretty
-
-then run pacman.sh script
-
-```bash
-chmod +x pacman.sh
-./pacman.sh
-```
 
 ### plymouth.sh
 Plymouth is an application which provides a graphical boot experience for Linux.
@@ -53,11 +37,18 @@ chmod +x plymouth.sh
 ```
 
 ## During-Instalation
-you will be asked to write certain package names, link for reference
+you will be asked to write certain package names, link for reference 
 
-https://github.com/adi1090x/plymouth-themes
-
+https://github.com/adi1090x/plymouth-themes \
 https://github.com/VandalByte/dedsec-grub2-theme
+
+to start the install clone this repository, make main.sh executable and launch it
+```bash
+git clone https://github.com/ordinaryDamian/UdOS
+cd UdOS
+chmod u+x main.sh
+./main.sh
+```
 ## Post-instalation
 ### nerdfonts.sh
 script to install nerdfonts, open the file and comment (add # at the begging of the line) which fonts you do not want to install, be aware this script can take a long time to install

@@ -4,8 +4,8 @@ sudo pacman -S gnome-themes-extra --noconfirm
 sudo pacman -S gtk-engine-murrine gtk-engines --noconfirm
 sudo pacman -S sassc --noconfirm
 
-yay -S qogir-gtk-theme
-yay -S bibata-cursor-theme 
+yay -S qogir-gtk-theme --noconfirm
+yay -S bibata-cursor-theme --noconfirm
 
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme
 cd Tela-circle-icon-theme
