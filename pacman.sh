@@ -29,4 +29,4 @@ echo "$config" | sudo tee /etc/xdg/reflector/reflector.conf >/dev/null
 
 sudo systemctl enable reflector.service
 
-echo "Changes applied to reflector.conf."
+echo "Changes applied to reflector.conf"
