@@ -1,9 +1,8 @@
-#! /bin/sh
+#! /bin/bash
 # Sources:
 # https://wiki.archlinux.org/title/VirtualBox/Install_Arch_Linux_as_a_guest
 # https://github.com/K4rlosReyes/arch-bspwm
 # https://wiki.archlinux.org/title/Systemd/Timers CRON and Timers
-echo Did you set up pacman ?
 
 sudo pacman -Syyu --noconfirm
 
@@ -41,7 +40,3 @@ yay -S themechanger-git --noconfirm
 yay -S brave-bin --noconfirm
 sudo systemctl enable NetworkManager
 sudo systemctl enable avahi-daemon.service
-
-
-
-

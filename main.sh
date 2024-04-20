@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 # Check if the user is root
 if [ "$USER" = "root" ]; then
@@ -28,16 +28,42 @@ done
 echo "All .sh files in the directory are now executable."
 
 #Update pacman.conf
-source pacman.sh
+source ./pacman.sh
 
 # download AUR helper
-source yayInstall.sh
+source ./yayInstall.sh
 
 # Grub dedsec theme
-source dedsec.sh
+source ./dedsec.sh
 
 #potom instalacia bud window managera alebo desktopu
-# source x.sh
+
+echo "Base Xorg installation and display server installation"
+source ./programs.sh
+
+echo "Installing desktop enviroment, chose one of the following and write (1/2/3):"
+while true; do
+    read -p "bspwm - 1\nGNOME - 2\nPlasma - 3\nChoose desktop environment: " desktop
+
+    case $desktop in
+        1)
+            source ./bspwm.sh
+            break
+            ;;
+        2)
+            source ./gnome.sh
+            break
+            ;;
+        3)
+            source ./plasma.sh
+            break
+            ;;
+        *)
+            echo "Invalid option. Please choose a valid option."
+            ;;
+    esac
+done
+
 
 #nakoniec theme, asi ostanem na graphite
-# theme.sh
+source ./theme.sh

@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bash
 sudo pacman -S ly --noconfirm
 sudo systemctl enable ly.service
 

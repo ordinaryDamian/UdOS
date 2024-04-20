@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 # https://www.debugpoint.com/install-plymouth-arch-linux/
 # open the /etc/mkinitcpio.conf and add the plymouth at the end of the HOOKS parameter
 # open the /etc/default/grub append the quiet splash under parameter GRUB_CMDLINE_LINUX_DEFAULT
