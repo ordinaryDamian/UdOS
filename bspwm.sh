@@ -3,7 +3,9 @@ sudo pacman -S ly --noconfirm
 sudo systemctl enable ly.service
 
 sudo pacman -S feh dmenu polybar bspwm sxhkd firefox neovim gimp flameshot nemo --noconfirm
-sudo pacman -S inkscape --noconfirm
+sudo pacman -S inkscape alacritty kitty tmux --noconfirm
+sudo pacman -S thunar pcmanfm rsync --noconfirm
+sudo pacman -S autorandr --noconfirm
 
 #TODO: naucit sa ako spustit rofi scripty
 # https://github.com/adi1090x/rofi

@@ -17,8 +17,9 @@ sudo pacman -S xorg-xman --noconfirm
 
 echo "Installing system tools"
 # brightnessctl
-sudo pacman -S curl zip unzip mlocate exa wget tilix openssl openssh git net-tools tldr trash-cli tar --noconfirm
-sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils --noconfirm
+# TODO: gxkb keyboard switcher
+sudo pacman -S curl zip unzip mlocate exa wget tilix openssl openssh git net-tools tldr trash-cli tar cmake --noconfirm
+sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils util-linux  --noconfirm
 
 
 echo "Installing Printer suuport (CUPS)"
@@ -41,6 +42,7 @@ sudo pacman -S ttf-roboto ttf-firacode-nerd cantarell-fonts noto-fonts noto-font
 yay -S nerd-fonts-jetbrains-mono --noconfirm
 yay -S themechanger-git --noconfirm
 yay -S brave-bin --noconfirm
+sudo systemctl enable fstrim.timer
 sudo systemctl enable NetworkManager
 sudo systemctl enable avahi-daemon.service
 # TODO: check default config allow SSH
