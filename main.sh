@@ -67,3 +67,4 @@ done
 
 #nakoniec theme, asi ostanem na graphite
 source ./theme.sh
+sudo updatedb

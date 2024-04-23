@@ -1,16 +1,17 @@
 # UdOS
 UdOS semestral work
 
-The goal of this project is to create a easy installation and distribution of the scripts
+The goal of this project is to create a easy installation and distribution of the scripts to install essential part of the system
 
 The packages needed for this installation are git and your chosen console-based editor ($EDITOR)
 
-$EDITOR = any console based editor like: nano, vim, neovim, micro, ...
+in coomands replace: $EDITOR for any console based editor like: nano, vim, neovim, micro, ...
 
 
 ## Pre-installation
 For this install you will need git and your editor of choice as you will need to modify several configuration files for the full experience, everything will be detailed bellow.
 
+Making these modifications are not necesarry to perform, but for full experience it is advised to also make these changes
 ### plymouth.sh
 Plymouth is an application which provides a graphical boot experience for Linux.
 
@@ -53,8 +54,9 @@ chmod u+x main.sh
 ```
 ## Post-installation
 ### nerdfonts.sh
-script to install nerdfonts, open the file and comment (add # at the begging of the line) which fonts you do not want to install, be aware this script can take a long time to install
+script to install nerdfonts, open the file and comment (add # at the begging of the line) to fonts which you do not want to install, be aware this script can take a long time to install
 ```bash
 chmod +x nerdfonts.sh
 ./nerdfonts.sh
 ```
+After full installation was performed it is advised to fully restart the system

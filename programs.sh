@@ -18,8 +18,9 @@ sudo pacman -S xorg-xman --noconfirm
 echo "Installing system tools"
 # brightnessctl
 # TODO: gxkb keyboard switcher
-sudo pacman -S curl zip unzip mlocate exa wget tilix openssl openssh git net-tools tldr trash-cli tar cmake --noconfirm
-sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils util-linux  --noconfirm
+sudo pacman -S curl zip unzip mlocate plocate eza wget tilix openssl openssh git net-tools tldr trash-cli tar cmake --noconfirm
+sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils   --noconfirm
+sudo pacman -S coreutils less findutils diffutils grep sed gawk util-linux procps-ng binutils findutils file --noconfirm
 
 
 echo "Installing Printer suuport (CUPS)"
@@ -37,7 +38,6 @@ echo "Installing office package"
 sudo pacman -S libreoffice-fresh-en-gb libreoffice-extension-texmaths libreoffice-extension-writer2latex --noconfirm
 sudo pacman -S fastfetch --noconfirm
 sudo pacman -S starship --noconfirm
-sudo pacman -S dunst picom --noconfirm
 sudo pacman -S ttf-roboto ttf-firacode-nerd cantarell-fonts noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm
 yay -S nerd-fonts-jetbrains-mono --noconfirm
 yay -S themechanger-git --noconfirm
