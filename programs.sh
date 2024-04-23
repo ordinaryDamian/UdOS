@@ -16,18 +16,21 @@ sudo pacman -S xorg-xinit --noconfirm
 sudo pacman -S xorg-xman --noconfirm
 
 echo "Installing system tools"
+# brightnessctl
 sudo pacman -S curl zip unzip mlocate exa wget tilix openssl openssh git net-tools tldr trash-cli tar --noconfirm
-sudo pacman -S man cowsay btop htop cmatrix brightnessctl ripgrep fd npm python hwinfo usbutils --noconfirm
+sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils --noconfirm
+
 
 echo "Installing Printer suuport (CUPS)"
 sudo pacman -S cups cups-pdf print-manager --noconfirm
 sudo systemctl enable cups.socket
 
 echo "Installing networking tools"
-sudo pacman -S avahi networkmanager network-manager-applet --noconfirm
+sudo pacman -S avahi networkmanager network-manager-applet ufw --noconfirm
 
 echo "Installing applications"  
-sudo pacman -S thunderbird mpv notepadqq obs-studio tilix arandr ark ntfs-3g obsidian pulseaudio pulseaudio-alsa pulseaudio-bluetooth yt-dlp noto-fonts-emoji pcmanfm firefox  --noconfirm
+# pulseaudio-bluetooth
+sudo pacman -S thunderbird mpv notepadqq obs-studio tilix arandr ark ntfs-3g obsidian pulseaudio pulseaudio-alsa yt-dlp noto-fonts-emoji pcmanfm firefox  --noconfirm
 
 echo "Installing office package"
 sudo pacman -S libreoffice-fresh-en-gb libreoffice-extension-texmaths libreoffice-extension-writer2latex --noconfirm
@@ -40,3 +43,5 @@ yay -S themechanger-git --noconfirm
 yay -S brave-bin --noconfirm
 sudo systemctl enable NetworkManager
 sudo systemctl enable avahi-daemon.service
+# TODO: check default config allow SSH
+sudo systemctl enable ufw.service
