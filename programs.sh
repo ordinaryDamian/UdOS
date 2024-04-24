@@ -19,7 +19,7 @@ echo "Installing system tools"
 # brightnessctl
 # TODO: gxkb keyboard switcher
 sudo pacman -S curl zip unzip mlocate plocate eza wget tilix openssl openssh git net-tools tldr trash-cli tar cmake --noconfirm
-sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils nomacs --noconfirm
+sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils --noconfirm
 sudo pacman -S coreutils less findutils diffutils grep sed gawk util-linux procps-ng binutils findutils file --noconfirm
 
 

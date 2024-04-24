@@ -17,7 +17,7 @@ chmod +x setup.sh
 # Rofi dependecies
 sudo pacman -S ncmpcpp xfce4-settings polkit xfce4-power-manager brightnessctl mpd mpc maim --noconfirm
 sudo pacman -S dunst picom xclip pamixer pavucontrol bat --noconfirm
-yay -S betterlockscreen light --noconfirm
+yay -S betterlockscreen light nomacs --noconfirm
 
 # TODO: pozriet sa ci toto funguje(posuvanie filou) a pridat top-bar files
 # https://aur.archlinux.org/packages/polybar-scripts-git
