@@ -42,6 +42,7 @@ sudo pacman -S ttf-roboto ttf-firacode-nerd cantarell-fonts noto-fonts noto-font
 yay -S nerd-fonts-jetbrains-mono --noconfirm
 yay -S themechanger-git --noconfirm
 yay -S brave-bin --noconfirm
+yay -S archlinux-tweak-tool-git --noconfirm
 sudo systemctl enable fstrim.timer
 sudo systemctl enable NetworkManager
 sudo systemctl enable avahi-daemon.service
