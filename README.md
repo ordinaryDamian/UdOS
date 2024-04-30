@@ -43,7 +43,8 @@ chmod +x plymouth.sh
 ou will be asked to provide certain package names. Refer to the following links for more information
 
 https://github.com/adi1090x/plymouth-themes \
-https://github.com/VandalByte/dedsec-grub2-theme
+https://github.com/VandalByte/dedsec-grub2-theme \
+https://aur.archlinux.org/packages?O=0&K=adi1090x&SeB=nd&SB=p
 
 to start the install clone this repository, make main.sh executable and launch it
 ```bash
