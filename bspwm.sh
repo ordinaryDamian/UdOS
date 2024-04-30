@@ -39,7 +39,5 @@ chmod +x $HOME/.config/bspwm/bspwmrc
 cp ./sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
 # chmod +x $HOME/.config/sxhkd/sxhkdrc
 
-sudo updatedb
-
 #sudo pacman -S qt5ct --noconfirm
 # echo And modify the file /etc/environment as sudo an add the following line: QT_QPA_PLATFORMTHEME=qt5ct
