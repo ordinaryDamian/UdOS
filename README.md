@@ -19,7 +19,8 @@ Plymouth is an application which provides a graphical boot experience for Linux.
 sudo $EDITOR /etc/mkinitcpio.conf
 ```
 
-ppend 'plymouth' at the end of the HOOKS parameter
+append 'plymouth' at the end of the HOOKS parameter
+
 
 ![alt text](screenshots/image-1.png)
 
@@ -39,12 +40,15 @@ chmod +x plymouth.sh
 ./plymouth.sh
 ```
 
-## During-installation
-ou will be asked to provide certain package names. Refer to the following links for more information
-
 https://github.com/adi1090x/plymouth-themes \
-https://github.com/VandalByte/dedsec-grub2-theme \
 https://aur.archlinux.org/packages?O=0&K=adi1090x&SeB=nd&SB=p
+
+
+## During-installation
+you will be asked to provide certain package names. Refer to the following links for more information
+
+https://github.com/VandalByte/dedsec-grub2-theme \
+
 
 to start the install clone this repository, make main.sh executable and launch it
 ```bash
@@ -62,3 +66,12 @@ chmod +x nerdfonts.sh
 ./nerdfonts.sh
 ```
 After full installation was performed it is advised to fully restart the system
+### Themes
+You can install themes via ocs-url from websites like kdestore.com \
+https://www.pling.com/s/All-Linux/p/1277095\
+https://www.pling.com/p/1661959\
+https://www.pling.com/p/1661959\
+https://www.pling.com/p/1738703\
+https://www.pling.com/p/1464332
+
+

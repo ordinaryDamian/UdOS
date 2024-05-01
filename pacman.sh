@@ -29,5 +29,3 @@ echo "$config" | sudo tee /etc/xdg/reflector/reflector.conf >/dev/null
 
 sudo systemctl enable reflector.service
 sudo systemctl enable paccache.timer
-
-echo "Changes applied to reflector.conf"

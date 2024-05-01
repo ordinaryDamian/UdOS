@@ -7,6 +7,11 @@ sudo pacman -S inkscape alacritty kitty tmux --noconfirm
 sudo pacman -S thunar pcmanfm rsync --noconfirm
 sudo pacman -S autorandr --noconfirm
 
+# Rofi dependecies
+sudo pacman -S ncmpcpp xfce4-settings polkit xfce4-power-manager brightnessctl mpd mpc maim --noconfirm
+sudo pacman -S dunst picom xclip pamixer pavucontrol bat --noconfirm
+yay -S betterlockscreen light nomacs --noconfirm
+
 #TODO: naucit sa ako spustit rofi scripty
 # https://github.com/adi1090x/rofi
 sudo pacman -S rofi --noconfirm
@@ -14,10 +19,6 @@ git clone --depth=1 https://github.com/adi1090x/rofi.git
 cd rofi
 chmod +x setup.sh
 ./setup.sh
-# Rofi dependecies
-sudo pacman -S ncmpcpp xfce4-settings polkit xfce4-power-manager brightnessctl mpd mpc maim --noconfirm
-sudo pacman -S dunst picom xclip pamixer pavucontrol bat --noconfirm
-yay -S betterlockscreen light nomacs --noconfirm
 
 # TODO: pozriet sa ci toto funguje(posuvanie filou) a pridat top-bar files
 # https://aur.archlinux.org/packages/polybar-scripts-git

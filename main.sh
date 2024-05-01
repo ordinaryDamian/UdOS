@@ -68,3 +68,5 @@ done
 #nakoniec theme, asi ostanem na graphite
 source ./theme.sh
 sudo updatedb
+echo "Installation complete. Reboot your system."
+echo "After you login, you can change the theme or extend your system with ArchLinux Tweak Tool."
