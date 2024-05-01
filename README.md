@@ -48,6 +48,7 @@ https://aur.archlinux.org/packages?O=0&K=adi1090x&SeB=nd&SB=p
 
 to start the install clone this repository, make main.sh executable and launch it
 ```bash
+cd
 git clone https://github.com/ordinaryDamian/UdOS
 cd UdOS
 chmod u+x main.sh
