@@ -4,6 +4,7 @@ echo "Installing yay (yet another yogurt) AUR helper."
 echo "What is AUR ? : https://itsfoss.com/aur-arch-linux/ "
 sleep 5
 
+# instalacia AUR helpera yay
 sudo pacman -S git base-devel --noconfirm
 git clone https://aur.archlinux.org/yay.git
 cd yay

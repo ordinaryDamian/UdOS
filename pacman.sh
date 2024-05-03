@@ -27,5 +27,6 @@ config="--verbose
 # Use sudo and sed to update reflector.conf
 echo "$config" | sudo tee /etc/xdg/reflector/reflector.conf >/dev/null
 
+# Enable reflector service and paccache timer for orphan packages
 sudo systemctl enable reflector.service
 sudo systemctl enable paccache.timer

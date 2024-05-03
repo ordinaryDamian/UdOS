@@ -12,8 +12,9 @@ sudo pacman -S xorg-apps --noconfirm
 sudo pacman -S virtualbox-host-modules-arch virtualbox-guest-utils mesa --noconfirm
 sudo pacman -S xdg-user-dirs --noconfirm
 xdg-user-dirs-update
-sudo pacman -S xorg-xinit --noconfirm
-sudo pacman -S xorg-xman --noconfirm
+sudo pacman -S xorg-xinit xdg-utils --noconfirm
+sudo pacman -S xorg-xman iwd --noconfirm
+sudo pacman -S smartmontools wireless_tools wpa_supplicant --noconfirm
 
 echo "Installing system tools"
 # TODO: gxkb keyboard switcher

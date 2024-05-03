@@ -28,18 +28,18 @@ done
 echo "All .sh files in the directory are now executable."
 
 #Update pacman.conf
-source ./pacman.sh
+source $HOME/UdOS/pacman.sh
 
 # download AUR helper
-source ./yayInstall.sh
+source $HOME/UdOS/yayInstall.sh
 
 # Grub dedsec theme
-source ./dedsec.sh
+source $HOME/UdOS/dedsec.sh
 
 #potom instalacia bud window managera alebo desktopu
 
 echo "Base Xorg installation and display server installation"
-source ./programs.sh
+source $HOME/UdOS/programs.sh
 
 echo "Installing desktop enviroment, chose one of the following and write (1/2/3):"
 while true; do
@@ -47,15 +47,15 @@ while true; do
 
     case $desktop in
         1)
-            source ./bspwm.sh
+            source $HOME/UdOS/bspwm.sh
             break
             ;;
         2)
-            source ./gnome.sh
+            source $HOME/UdOS/gnome.sh
             break
             ;;
         3)
-            source ./plasma.sh
+            source $HOME/UdOS/plasma.sh
             break
             ;;
         *)
@@ -66,7 +66,7 @@ done
 
 
 #nakoniec theme, asi ostanem na graphite
-source ./theme.sh
+source $HOME/UdOS/theme.sh
 sudo updatedb
 echo "Installation complete. Reboot your system."
 echo "After you login, you can change the theme or extend your system with ArchLinux Tweak Tool."
