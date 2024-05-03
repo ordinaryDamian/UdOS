@@ -33,17 +33,6 @@ you can also append 'quiet' if you want to suppress error and warning messages
 
 ![alt text](screenshots/image-2.png)
 
-then run the script
-
-```bash
-chmod +x plymouth.sh
-./plymouth.sh
-```
-
-https://github.com/adi1090x/plymouth-themes 
-
-https://aur.archlinux.org/packages?O=0&K=adi1090x&SeB=nd&SB=p
-
 
 ## During-installation
 you will be asked to provide certain package names. Refer to the following links for more information
@@ -66,6 +55,20 @@ script to install nerdfonts, open the file and comment (add # at the begging of 
 chmod +x nerdfonts.sh
 ./nerdfonts.sh
 ```
+
+then run the script
+
+```bash
+chmod +x plymouth.sh
+./plymouth.sh
+```
+
+https://github.com/adi1090x/plymouth-themes 
+
+https://aur.archlinux.org/packages?O=0&K=adi1090x&SeB=nd&SB=p
+
+
+
 After full installation was performed it is advised to fully restart the system
 ### Themes
 You can install themes via ocs-url from websites like kdestore.com \
