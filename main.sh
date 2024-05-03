@@ -43,7 +43,7 @@ source ./programs.sh
 
 echo "Installing desktop enviroment, chose one of the following and write (1/2/3):"
 while true; do
-    read -p "bspwm - 1\nGNOME - 2\nPlasma - 3\nChoose desktop environment: " desktop
+    read -p "bspwm - 1 GNOME - 2 Plasma - 3  Choose desktop environment: " desktop
 
     case $desktop in
         1)
