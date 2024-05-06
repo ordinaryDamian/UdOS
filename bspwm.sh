@@ -29,6 +29,10 @@ cd polybar-themes
 chmod +x setup.sh
 ./setup.sh
 
+mkdir -p $HOME/.config/{bspwm,sxhkd,wallpaper,dunst,picom}
+git clone https://github.com/ordinaryDamian/Linux
+cd Linux
+
 cp ./wallpaper.jpg $HOME/.config/wallpaper/wallpaper.jpg
 
 cp ./bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
