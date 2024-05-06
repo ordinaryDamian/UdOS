@@ -20,7 +20,7 @@ echo "Installing system tools"
 # TODO: gxkb keyboard switcher
 sudo pacman -S curl zip unzip mlocate plocate eza wget tilix openssl openssh git net-tools tldr trash-cli tar cmake --noconfirm
 sudo pacman -S man cowsay btop htop cmatrix ripgrep fd npm python hwinfo usbutils --noconfirm
-sudo pacman -S coreutils less more findutils diffutils grep sed gawk util-linux procps-ng binutils findutils file --noconfirm
+sudo pacman -S coreutils less findutils diffutils grep sed gawk util-linux procps-ng binutils findutils file --noconfirm
 
 echo "Installing Printer suuport (CUPS)"
 sudo pacman -S cups cups-pdf print-manager --noconfirm
@@ -31,7 +31,7 @@ sudo pacman -S avahi networkmanager network-manager-applet ufw --noconfirm
 
 echo "Installing applications"  
 # pulseaudio-bluetooth
-sudo pacman -S thunderbird mpv notepadqq obs-studio tilix arandr ark ntfs-3g obsidian pulseaudio pulseaudio-alsa yt-dlp noto-fonts-emoji pcmanfm firefox  --noconfirm
+sudo pacman -S thunderbird mpv notepadqq arandr ntfs-3g pulseaudio pulseaudio-alsa yt-dlp noto-fonts-emoji --noconfirm
 
 echo "Installing office package"
 sudo pacman -S libreoffice-fresh-en-gb libreoffice-extension-texmaths libreoffice-extension-writer2latex --noconfirm

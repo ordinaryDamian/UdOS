@@ -3,9 +3,9 @@ sudo pacman -S ly --noconfirm
 sudo systemctl enable ly.service
 
 sudo pacman -S feh dmenu polybar bspwm sxhkd firefox neovim gimp flameshot nemo --noconfirm
-sudo pacman -S inkscape alacritty kitty tmux --noconfirm
-sudo pacman -S thunar pcmanfm rsync --noconfirm
-sudo pacman -S autorandr --noconfirm
+sudo pacman -S inkscape alacritty kitty tmux wezterm --noconfirm
+sudo pacman -S pcmanfm rsync obs-studio obsidian --noconfirm
+sudo pacman -S autorandr xorg-xsetroot xorg-xrandr --noconfirm
 
 # Rofi dependecies
 sudo pacman -S ncmpcpp xfce4-settings polkit xfce4-power-manager brightnessctl mpd mpc maim --noconfirm
@@ -19,6 +19,9 @@ git clone --depth=1 https://github.com/adi1090x/rofi.git
 cd rofi
 chmod +x setup.sh
 ./setup.sh
+echo "PATH=$PATH:~/.config/rofi/scripts" >> ~/.profile
+# TODO: pridat do sxhkdrc
+# entering t7_launcher in the terminal (or executing this command) will summon the type-7 launcher
 
 # TODO: pozriet sa ci toto funguje(posuvanie filou) a pridat top-bar files
 git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
@@ -26,19 +29,12 @@ cd polybar-themes
 chmod +x setup.sh
 ./setup.sh
 
-cp ./launch.sh $HOME/.config/polybar/launch.sh
-chmod +x $HOME/.config/polybar/launch.sh
-
-cp /etc/polybar/config.ini $HOME/.config/polybar/config.ini
-
-cp ./.bin $HOME/.config/.bin
-chmod +x $HOME/.config/.bin/*
 cp ./wallpaper.jpg $HOME/.config/wallpaper/wallpaper.jpg
 
 cp ./bspwm/bspwmrc $HOME/.config/bspwm/bspwmrc
 chmod +x $HOME/.config/bspwm/bspwmrc
 cp ./sxhkd/sxhkdrc $HOME/.config/sxhkd/sxhkdrc
-# chmod +x $HOME/.config/sxhkd/sxhkdrc
+chmod +x $HOME/.config/sxhkd/sxhkdrc
 
 #sudo pacman -S qt5ct --noconfirm
 # echo And modify the file /etc/environment as sudo an add the following line: QT_QPA_PLATFORMTHEME=qt5ct
