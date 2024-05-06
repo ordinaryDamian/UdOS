@@ -9,8 +9,8 @@ sudo pacman -S autorandr --noconfirm
 
 # Rofi dependecies
 sudo pacman -S ncmpcpp xfce4-settings polkit xfce4-power-manager brightnessctl mpd mpc maim --noconfirm
-sudo pacman -S dunst picom xclip pamixer pavucontrol bat --noconfirm
-yay -S betterlockscreen light nomacs --noconfirm
+sudo pacman -S dunst picom xclip pamixer pavucontrol bat python-pywal calc  --noconfirm
+yay -S betterlockscreen light nomacs networkmanager-dmenu-git --noconfirm
 
 #TODO: naucit sa ako spustit rofi scripty
 # https://github.com/adi1090x/rofi
@@ -21,10 +21,10 @@ chmod +x setup.sh
 ./setup.sh
 
 # TODO: pozriet sa ci toto funguje(posuvanie filou) a pridat top-bar files
-# https://aur.archlinux.org/packages/polybar-scripts-git
-mkdir -p $HOME/.config/{bspwm,sxhkd,dunst,polybar,picom,wallpaper}
-git clone https://github.com/ordinaryDamian/Linux
-cd Linux
+git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+cd polybar-themes
+chmod +x setup.sh
+./setup.sh
 
 cp ./launch.sh $HOME/.config/polybar/launch.sh
 chmod +x $HOME/.config/polybar/launch.sh
