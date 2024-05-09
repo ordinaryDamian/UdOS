@@ -12,8 +12,8 @@ echo "After you have found the theme you want check out the AUR and write exactl
 echo "For example: plymouth-theme-arch-space-git"
 read -p  "what plymouth theme you want to install? " theme
 
-yay -S plymouth-theme-$theme-git
-# yay -S plymouth-theme-glitch-git 
+yay -S plymouth-theme-$theme-git --noconfirm
+# yay -S plymouth-theme-glitch-git
 # packages needed - plymouth, plymouth-x11, plymouth-plugin-script(fedora)
 
 # after downloading or cloning themes, copy the selected theme in plymouth theme dir
